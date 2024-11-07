@@ -1,0 +1,22 @@
+{
+  "name": "node-red-contrib-cyclic-counter",
+  "version": "1.0.0",
+  "description": "A Node-RED node that acts as a cyclic counter with an optional reset delay",
+  "main": "cyclic_counter.js",
+  "keywords": ["node-red", "counter", "cyclic", "reset"],
+  "author": "Clément BERARD <contact@berard.dev>",
+  "license": "MIT",
+  "node-red": {
+    "nodes": {
+      "counter": "cyclic_counter.js"
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/clement-berard/node-red-contrib-cyclic-counter.git"
+  },
+  "bugs": {
+    "url": "https://github.com/clement-berard/node-red-contrib-cyclic-counter/issues"
+  },
+  "homepage": "https://github.com/clement-berard/node-red-contrib-cyclic-counter"
+}

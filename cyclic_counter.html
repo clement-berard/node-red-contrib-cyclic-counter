@@ -1,0 +1,45 @@
+<script type="text/html" data-template-name="cyclic counter">
+    <div class="form-row">
+        <label for="node-input-name"><i class="fa fa-tag"></i> Name</label>
+        <input type="text" id="node-input-name" placeholder="cyclic counter" />
+    </div>
+    <div class="form-row">
+        <label for="node-input-maxCount"><i class="fa fa-cog"></i> Max Count</label>
+        <input type="number" id="node-input-maxCount" placeholder="3" />
+    </div>
+    <div class="form-row node-type-duration">
+        <label for="node-input-timeoutDuration"><i class="fa fa-clock-o"></i> Reset Delay</label>
+        <input type="number" id="node-input-timeoutDuration" placeholder="0" style="text-align:end; width:70px !important" />
+        <select id="node-input-timeoutUnit" style="width:140px !important">
+            <option value="ms">Milliseconds</option>
+            <option value="s">Seconds</option>
+            <option value="min">Minutes</option>
+            <option value="hr">Hours</option>
+            <option value="day">Days</option>
+        </select>
+    </div>
+    <div class="form-row">
+        <label for="node-input-outputProperty"><i class="fa fa-exchange"></i> Output Property</label>
+        <input type="text" id="node-input-outputProperty" placeholder="payload" />
+    </div>
+</script>
+
+<script type="text/javascript">
+    RED.nodes.registerType("cyclic counter", {
+        category: "function", // Choisissez la catégorie dans la sidebar, ici "function"
+        color: "#a6bbcf",
+        defaults: {
+            name: {value: "cyclic counter"}, // Nom par défaut affiché
+            maxCount: {value: 3},
+            timeoutDuration: {value: 0},
+            timeoutUnit: {value: "ms"},
+            outputProperty: {value: "payload"}
+        },
+        inputs: 1,
+        outputs: 1,
+        icon: "font-awesome/fa-repeat",
+        label: function () {
+            return this.name || "cyclic counter";
+        }
+    });
+</script>
