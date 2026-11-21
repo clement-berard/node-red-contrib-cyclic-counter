@@ -1,5 +1,13 @@
 # Cyclic Counter Node for Node-RED
 
+> [!WARNING]
+> **This package is deprecated and the repository is archived.**
+> Use [`@keload/node-red-contrib-ultimate-toolkit`](https://github.com/clement-berard/node-red-contrib-ultimate-toolkit) instead.
+>
+> ```bash
+> npm install @keload/node-red-contrib-ultimate-toolkit
+> ```
+
 A customizable cyclic counter node for Node-RED that iterates through a defined sequence of numbers and can reset after a set timeout. It allows flexible control over the counter's behavior, making it useful in a variety of automation scenarios.
 
 ## Features
